@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+
+    <!-- Popping Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/06e3d34af8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#F4F7FF] pt-4 pb-4 poppins">
+    <!-- Header -->
+    <header class="max-w-screen px-32 m-auto mb-5">
+      <!-- Navbar -->
+      <section class="bg-white p-5 rounded-lg">
+        <div class="flex justify-between">
+          <div class="flex gap-5 items-center">
+            <img src="./assets/logo.png" alt="" />
+            <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+          </div>
+
+
+          <div class="flex gap-5 items-center">
+            <button id="back-to-desk" class="btn btn-primary">Back to Desk</button>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-screen px-32 m-auto rounded-lg">
+      <section>
+        <!-- Question 1 -->
+        <div class="mb-10 border border-blue-500 rounded-lg p-5">
+          <div class="font-bold text-lg mb-5 bg-white p-5 rounded-lg">
+            <h1>
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </h1>
+          </div>
+          <div class="text-lg text-gray-500 mb-5 bg-white p-5 rounded-lg">
+            <p>
+              <b>getElementById:</b> Selects an element by its unique ID (e.g.,
+              document.getElementById("myId")). <br />
+              <b>getElementsByClassName / getElementsByTagName:</b> Selects
+              elements by class or tag name, returning an HTMLCollection. <br />
+              <b>querySelector / querySelectorAll:</b> Selects elements using
+              CSS selectors, where querySelector returns the first match and
+              querySelectorAll returns a NodeList of all matches.F
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="mb-10 border border-blue-500 rounded-lg p-5">
+          <div class="font-bold text-lg mb-5 bg-white p-5 rounded-lg">
+            <h1>
+              Question-2: What is the difference between innerHTML, innerText,
+              and textContent ?
+            </h1>
+          </div>
+          <div class="text-lg text-gray-500 mb-5 bg-white p-5 rounded-lg">
+            <p>
+              <b>innerHTML:</b> Returns or sets the HTML content inside an
+              element, including HTML tags (e.g., element.innerHTML =
+              "<b>Bold</b>" renders bold text). <br />
+              <b>innerText: </b> Returns or sets only the visible text inside an
+              element, ignoring hidden elements and preserving formatting.
+              <br />
+              <b>textContent:</b> Returns or sets all text inside an element,
+              including hidden elements, without formatting or parsing HTML.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mb-10 border border-blue-500 rounded-lg p-5">
+          <div class="font-bold text-lg mb-5 bg-white p-5 rounded-lg">
+            Question-3: What is event delegation in the DOM?
+          </div>
+          <div class="text-lg text-gray-500 mb-5 bg-white p-5 rounded-lg">
+            <p>
+              Event delegation is a technique in the DOM where a single event
+              listener is added to a parent element to handle events on its
+              child elements. Instead of adding event listeners to multiple
+              child elements individually, the parent listens for events using
+              event bubbling and determines the target element using
+              event.target. This improves performance and is useful for
+              dynamically added elements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="mb-10 border border-blue-500 rounded-lg p-5">
+          <div class="font-bold text-lg mb-5 bg-white p-5 rounded-lg">
+            Question-4: What is event bubbling in the DOM?
+          </div>
+          <div class="text-lg text-gray-500 mb-5 bg-white p-5 rounded-lg">
+            <p>
+              Event bubbling is a phase in the DOM event propagation process
+              where an event starts from the target element and moves upward
+              through its ancestors (parent, grandparent, etc.) until it reaches
+              the document object.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Question 5 -->
+        <div class="mb-10 border border-blue-500 rounded-lg p-5">
+          <div class="font-bold text-lg mb-5 bg-white p-5 rounded-lg">
+            Question-5: How do you create, add, and remove elements using JavaScript?
+          </div>
+          <div class="text-lg text-gray-500 mb-5 bg-white p-5 rounded-lg">
+            <p>
+                <b>Create an Element:</b> Use document.createElement(tagName). <br> 
+                <b>Add an Element:</b> Use appendChild(), append(), or insertBefore(). <br>
+                <b>Remove an Element:</b> Use remove() or removeChild(). <br>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./JavaScript Files/blog.js"></script>
+  </body>
+</html>

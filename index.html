@@ -20,12 +20,6 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/06e3d34af8.js"
-      crossorigin="anonymous"
-    ></script>
-
     <style>
       .poppins {
         font-family: "Poppins", sans-serif;
@@ -78,7 +72,7 @@
               </div>
             </div>
             <!-- discover something new -->
-            <div
+            <div id="discover-something"
               class="flex items-center  gap-5 bg-gradient-to-r  col-span-2 from-blue-500 to-blue-300 text-white p-5 rounded-lg"
             >
               <img class="h-16 w-16"  src="./assets/board.png" alt="" />
@@ -258,12 +252,12 @@
               <h1 class="text-lg">Activity Log</h1>
             </div>
             <div class="text-center">
-              <button class="btn btn-primary">Clear History</button>
+              <button id="clear-btn" class="btn btn-primary">Clear History</button>
             </div>
           </div>
           <!-- Lists of history -->
           <hr class="border border-dashed" />
-          <div class="mt-3 p-5">
+          <div id="history-list" class="mt-3 p-5">
             <h1
               class="bg-[#F4F7FF] py-2 px-4 border border-blue-500 rounded-lg text-justify"
             >
@@ -273,5 +267,9 @@
         </div>
       </section>
     </main>
+
+    <!-- JS Files -->
+     <script src="./JavaScript Files/index.js"></script>
+     <script src="./JavaScript Files/utilites.js"></script>
   </body>
 </html>
