@@ -3,6 +3,40 @@ function getInnerTextById(id) {
   return value;
 }
 
+function getInnerValueById(id) {
+  const value = document.getElementById(id).innerText;
+  return value;
+}
+function getInnerValueByIdAsInteger(id) {
+  const value = document.getElementById(id).innerText;
+  valueInt = parseInt(value);
+  return valueInt;
+}
+
+function getCurrentDate() {
+  const now = new Date();
+  const date = now.getDate();
+  const month = getMonthByName(now.getMonth());
+  const year = now.getFullYear();
+  const currentDate = month + " " + date + " " + year;
+  console.log(currentDate);
+  return currentDate;
+}
+
+function getCurrentTime() {
+  const now = new Date();
+  const hour = now.getHours();
+  const minute = now.getMinutes();
+  const second = now.getSeconds();
+  let time = "";
+  if (hour >= 12) {
+    time = hour + ":" + minute + ":" + second + " PM";
+  } else {
+    time = hour + ":" + minute + ":" + second + " AM";
+  }
+  return time;
+}
+
 function getMonthByName(n) {
   switch (n) {
     case 0:
@@ -51,18 +85,13 @@ function getDayName(n) {
   }
 }
 
-function getInnerValueById(id) {
-  const value = document.getElementById(id).innerText;
-  return value;
-}
-function getInnerValueByIdAsInteger(id) {
-  const value = document.getElementById(id).innerText;
-  valueInt = parseInt(value);
-  return valueInt;
-}
-
-
-function setNotification(titleId, historyDivId, numberOfTaskId, totalTaskId,time) {
+function setNotification(
+  titleId,
+  historyDivId,
+  numberOfTaskId,
+  totalTaskId,
+  time
+) {
   const title = getInnerValueById(titleId);
   const message = "You have Complete The Task " + title + " at " + time;
   console.log(message);
@@ -89,4 +118,10 @@ function setNotification(titleId, historyDivId, numberOfTaskId, totalTaskId,time
   if (counter == 6) {
     alert("Congratulations!, You have completed all the task.");
   }
+}
+
+
+
+function getRandomHexColor() {
+  return "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
 }
