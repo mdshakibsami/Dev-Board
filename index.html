@@ -42,7 +42,7 @@
               class="flex items-center gap-3 bg-[#F4F7FF] px-4 rounded-full py-2"
             >
               <img class="w-6 h-6" src="./assets/checkbox.png" alt="" />
-              <h1 class="text-3xl font-bold">23</h1>
+              <h1 id="total-task" class="text-3xl font-bold">23</h1>
             </div>
             <img
               class="bg-[#F4F7FF] p-2 rounded-full"
@@ -68,7 +68,7 @@
                 </div>
               <div>
                 <h1 class="text-sm font-bold text-gray-500">Task Assigned</h1>
-                <h1 class="font-bold text-2xl">05</h1>
+                <h1 id="number-of-task" class="font-bold text-2xl">06</h1>
               </div>
             </div>
             <!-- discover something new -->
@@ -102,7 +102,7 @@
               <!-- Top -->
               <div class=" space-y-2">
                 <button class="px-5 py-2 bg-white rounded-lg text-gray-600 text-sm  ">ShopEase</button>
-                <h1 class="text-xl">Fix Mobile Button Issue</h1>
+                <h1 id="title-1" class="text-xl">Fix Mobile Button Issue</h1>
                 <p class="px-2 py-2 bg-white rounded-lg text-gray-400 text-sm">
                   Debug using Chrome DevTools, check for overlapping..
                 </p>
@@ -115,7 +115,7 @@
                   <small class="box-date">21 March 2025</small>
                 </div>
                 <div>
-                  <button id="shop-ease-btn" class="btn btn-primary">Completed</button>
+                  <button id="btn-1" class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
@@ -126,7 +126,7 @@
               <!-- Top -->
               <div class=" space-y-2">
                 <button class="px-5 py-2 bg-white rounded-lg text-gray-600 text-sm  ">CloudSync</button>
-                <h1 class="text-xl">Add Dark Mode</h1>
+                <h1 id="title-2" class="text-xl">Add Dark Mode</h1>
                 <p class="px-2 py-2 bg-white rounded-lg text-gray-400 text-sm">
                   Debug using Chrome DevTools, check for overlapping..
                 </p>
@@ -139,7 +139,7 @@
                   <small class="box-date">21 March 2025</small>
                 </div>
                 <div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-2" class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@
               <!-- Top -->
               <div class=" space-y-2">
                 <button class="px-5 py-2 bg-white rounded-lg text-gray-600 text-sm  ">SwiftPay</button>
-                <h1 class="text-xl">Optimize  Home page </h1>
+                <h1 id="title-3" class="text-xl">Optimize  Home page </h1>
                 <p class="px-2 py-2 bg-white rounded-lg text-gray-400 text-sm">
                   Debug using Chrome DevTools, check for overlapping..
                 </p>
@@ -163,7 +163,7 @@
                   <small class="box-date">21 March 2025</small>
                 </div>
                 <div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-3" class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
@@ -174,7 +174,7 @@
               <!-- Top -->
               <div class=" space-y-2">
                 <button class="px-5 py-2 bg-white rounded-lg text-gray-600 text-sm  ">Meta</button>
-                <h1 class="text-xl">Add new emoji 🤲</h1>
+                <h1 id="title-4" class="text-xl">Add new emoji 🤲</h1>
                 <p class="px-2 py-2 bg-white rounded-lg text-gray-400 text-sm">
                   Debug using Chrome DevTools, check for overlapping..
                 </p>
@@ -187,7 +187,7 @@
                   <small class="box-date">21 March 2025</small>
                 </div>
                 <div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-4" class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
@@ -198,7 +198,7 @@
               <!-- Top -->
               <div class=" space-y-2">
                 <button class="px-5 py-2 bg-white rounded-lg text-gray-600 text-sm  ">Google LLC</button>
-                <h1 class="text-xl">Integrate OpenAI API</h1>
+                <h1 id="title-5" class="text-xl">Integrate OpenAI API</h1>
                 <p class="px-2 py-2 bg-white rounded-lg text-gray-400 text-sm">
                   Debug using Chrome DevTools, check for overlapping..
                 </p>
@@ -211,7 +211,7 @@
                   <small class="box-date">21 March 2025</small>
                 </div>
                 <div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-5" class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
@@ -222,7 +222,7 @@
               <!-- Top -->
               <div class=" space-y-2">
                 <button class="px-5 py-2 bg-white rounded-lg text-gray-600 text-sm  ">Glassdoar</button>
-                <h1 class="text-xl">Improve Job searching </h1>
+                <h1 id="title-6" class="text-xl">Improve Job searching </h1>
                 <p class="px-2 py-2 bg-white rounded-lg text-gray-400 text-sm">
                   Debug using Chrome DevTools, check for overlapping..
                 </p>
@@ -235,7 +235,7 @@
                   <small class="box-date">21 March 2025</small>
                 </div>
                 <div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn-6" class="btn btn-primary">Completed</button>
                 </div>
               </div>
             </div>
@@ -258,11 +258,11 @@
           <!-- Lists of history -->
           <hr class="border border-dashed" />
           <div id="history-list" class="mt-3 p-5">
-            <h1
+            <!-- <p
               class="bg-[#F4F7FF] py-2 px-4 border border-blue-500 rounded-lg text-justify"
             >
               You have Complete The Task Add Dark Mode at 12:48:15 PM
-            </h1>
+          </p> -->
           </div>
         </div>
       </section>
